@@ -1,0 +1,13 @@
+.featuredTitle{
+    text-align: center;
+    font-style: italic;
+    font-family: "Roboto Slab";
+    font-size: 34px;
+    font-weight: 600;
+    color: rgb(12 19 22);
+}
+.featuredBody{
+    background-color: red;
+    color: red;
+    height: 5000px;
+}

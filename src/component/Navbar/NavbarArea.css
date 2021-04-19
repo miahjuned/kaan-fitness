@@ -1,0 +1,13 @@
+.navbarItem{
+    color: white;
+    font-size: 20px;
+    border-left: 1px solid red;
+    padding-left: 10px;
+}
+.navbarItem:hover{
+    text-decoration: none;
+    color:red;
+    border-bottom: 1px solid red;
+    /* transition: ease-in-out 1s;
+    transform:translate3d(.5s); */
+}

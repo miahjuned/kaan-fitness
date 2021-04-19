@@ -1,0 +1,47 @@
+.headerArea{
+    background-image: url('../../images/Bg.jpg');
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    /* overflow: hidden; */
+}
+.heroImg{
+    margin-top: 50px;
+}
+/* .heroImg img{
+    background-color: red;
+    margin-left: 0;
+    padding-left: 0; */
+    /* height: 100%; */
+    /* height: inherit; */
+/* } */
+.headerInfo h2{
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    font-family: "Roboto Slab";
+    margin-top: 25px;
+    font-weight: 400;
+}
+
+.headerInfo p, article{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-family: "Roboto Slab";
+    margin-top: 25px;
+    font-weight: 400;
+}
+.headerInfo article{
+    font-style: italic;
+    /* padding-bottom: 205px; */
+    /* margin-bottom: 250px; */
+}
+.headerInfo Button{
+    background-color: red !important;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    border-color: red;
+    padding: 15px 25px;
+    font-size: 18px;
+    font-family: "Roboto Slab";
+}
+
