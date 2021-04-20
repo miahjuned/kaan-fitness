@@ -5,3 +5,10 @@
 .get_InTouch img{
     width: 250px;
 }
+.get_InTouch h2{
+    color: white;
+    font-size: 40px;
+    font-family: "Roboto Slab";
+    font-weight: 700;
+    margin-top: 25px;
+}
