@@ -1,0 +1,20 @@
+.Admin_Deshboard{
+    background-color: lightgray;
+}
+.Admin_Deshboard_Area{
+    height: 400px;
+    background-color: gray;
+}
+.Admin_Deshboard_Area .leftSide{
+    background-color: white;
+    /* height: 400px; */
+}
+.Admin_Deshboard_Area .leftSide a{
+    background-color: red;
+    color: white;
+    /* height: 400px; */
+}
+.Admin_Deshboard_Area .rightSide{
+    background-color: wheat;
+    /* height: 400px; */
+}

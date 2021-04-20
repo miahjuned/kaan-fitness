@@ -8,6 +8,15 @@
     text-decoration: none;
     color:red;
     border-bottom: 1px solid red;
-    /* transition: ease-in-out 1s;
-    transform:translate3d(.5s); */
+}
+
+.loginBtn Button{
+    background-color: rgb(255, 0, 0);
+    border-color: red;
+    margin-right: 10px;
+}
+.loginBtn Button:hover{
+    background-color: rgba(255, 0, 0, 0);
+    border-color: red;
+    margin-right: 10px;
 }

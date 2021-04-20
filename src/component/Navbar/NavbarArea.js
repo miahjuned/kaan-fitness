@@ -21,22 +21,13 @@ const NavbarArea = () => {
       <NavbarCollapse className="justify-content-md-end" id="responsive-navbar-nav">
         <Nav className="ml-auto">
             <Link className="pr-5 navbarItem" to="/home">Home</Link>
+            <Link className="pr-5 navbarItem" to="/admin">Deshboard</Link>
             <Link className="pr-5 navbarItem" to="/about">About</Link>
             <Link className="pr-5 navbarItem" to="/blog">Blog</Link>
             <Link className="pr-5 navbarItem" to="/login">Contact us</Link>
-            <Link className="pr-5 navbarItem" to="/login">Login</Link>
         </Nav>
-        <Form inline>
-            <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-            <Button variant="outline-info">Search</Button>
-
-            {/* <Nav className="mr-auto">
-              <Link className="pr-5 navbarItem" to="/login"><Button>Login</Button></Link>
-            </Nav> */}
-
-        </Form>
-        <Nav className="mr-auto">
-          <Link className="pr-5 navbarItem" to="/login"><Button>Login</Button></Link>
+        <Nav className="ml-auto">
+          <Link className="pr-5 loginBtn" to="/login"><Button>Login</Button></Link>
         </Nav>
       </NavbarCollapse>
       </Navbar>

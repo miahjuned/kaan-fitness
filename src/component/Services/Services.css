@@ -1,0 +1,32 @@
+.service_area{
+    background-color: gray;
+}
+.service_Section {
+    background-color: red;
+    padding: 25px 0px;
+
+}
+.service_Section article, h2{
+    text-align: center;
+
+}
+.service_Section h2{
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 34px;
+    text-transform: uppercase !important;
+    font-weight:bold;
+    color: rgb(5, 5, 65);
+    font-family: "Roboto Slab" !important;
+}
+.service_Section article{
+    font-style: italic;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 12px;
+    text-transform: uppercase !important;
+    font-weight:bold;
+    color: rgb(5, 5, 65);
+    font-family: "Roboto Slab" !important;
+    padding: 50px 0px 10px 0px;
+}
