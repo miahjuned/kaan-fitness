@@ -11,42 +11,49 @@ const Featured = () => {
         <Container>
             <h2 className="featuredTitle">Featured on:</h2>
             <hr/>
-            <Row >
-                <Col  md={3} lg={3} sm={3} xl={3} xs={12}>
-                    <a href="#" target="_blank">
-                        <FigureImage
+            <Row className="featuredBody" >
+                <Col  md={3} lg={3} sm={6} xl={3} xs={6}>
+                    <a href="#" target="_blank" >
+                        {/* <FigureImage
                             width={80}
                             alt="IPT"
                             src={Ipt}
-                        />
+                        /> */}
+
+                        <img className="Ipt" src={Ipt} alt=""/>
                     </a>
                 </Col>
-                <Col md={3} lg={3} sm={3} xl={3} xs={12}>
+                <Col md={3} lg={3} sm={6} xl={3} xs={6}>
                     <a href="#" target="_blank">
-                        <FigureImage
+                        {/* <FigureImage
                             width={200}
                             alt="Certified Online Trainer"
                             src={onlineTrainer}
-                        />
+                        /> */}
+
+                        <img className="align-middle onlineTrainer" src={onlineTrainer} alt=""/>
                     </a>
                 </Col>
-                <Col md={3} lg={3} sm={3} xl={3} xs={12}>
+                <Col md={3} lg={3} sm={6} xl={3} xs={6}>
                     <a href="#home">
-                        <FigureImage
+                        {/* <FigureImage
                             width={150}
                             alt="BBC"
                             src={BBC}
-                        />
+                        /> */}
+
+                        <img className="BBC" src={BBC} alt=""/>
                     </a>
                 </Col>
-                <Col md={3} lg={3} sm={3} xl={3} xs={12}>
+                <Col  md={3} lg={3} sm={6} xl={3} xs={6}>
                     <a href="#" target="_blank">
-                        <FigureImage
+                        {/* <FigureImage
                             width={100}
                             href="#"
                             alt="Brithsh Mushlim Radio"
                             src={BrithshMushlim}
-                        />
+                        /> */}
+                        <img className="BritishMuslim" src={BrithshMushlim} alt=""/>
                     </a>
                 </Col>
             </Row>

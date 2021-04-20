@@ -1,0 +1,32 @@
+.footer{
+    background-color: #363636;
+    margin-top: 15px;
+}
+.footerItem, .footerAbout{
+    color: white;
+    font-size: 20px;
+    padding-left: 10px;
+}
+.footerAbout{
+    border-left: 1px solid red;
+    border-right: 1px solid red;
+}
+.footerItem:hover, .footerAbout:hover{
+    text-decoration: none;
+    color:red;
+    border-bottom: 1px solid red;
+}
+.footer img{
+    height: 35px;
+    margin: 25px 0px 25px 32%;
+    text-align: center;
+}
+.footer article{
+    text-align: center;
+    font-size: 18px;
+    font-family: "Roboto Slab";
+    font-weight: 400;
+}
+.footer hr{
+    background-color: gray;
+}

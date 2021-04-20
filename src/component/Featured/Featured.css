@@ -5,9 +5,26 @@
     font-size: 34px;
     font-weight: 600;
     color: rgb(12 19 22);
+    margin-top: 25px;
 }
-.featuredBody{
-    background-color: red;
-    color: red;
-    height: 5000px;
+.featuredBody img{
+    margin: 10px;
+    opacity: 0.4;
+}
+.featuredBody img:hover{
+    opacity: 10;
+    transition: ease-in 300ms;
+}
+.featuredBody .Ipt{
+    width: 100px;
+    
+}
+.featuredBody .onlineTrainer{
+    width: 200px;
+}
+.featuredBody .BBC{
+    width: 150px;
+}
+.featuredBody .BritishMuslim{
+    width: 100px;
 }

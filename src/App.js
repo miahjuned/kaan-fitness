@@ -8,6 +8,9 @@ import {
   Link
 } from "react-router-dom";
 import Featured from './component/Featured/Featured';
+import Footer from './component/Footer/Footer';
+import Blog from './component/Blog/Blog';
+import GetInTouch from './component/Get_In_Touch/GetInTouch';
 
 function App() {
   return (
@@ -20,6 +23,9 @@ function App() {
 
         </Route>
       </Switch>
+      <GetInTouch></GetInTouch>
+      <Blog></Blog>
+      <Footer></Footer>
     </Router>
   );
 }
