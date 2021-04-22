@@ -9,7 +9,7 @@ const Admin_Deshboard = () => {
   const [isUser, setIsUser] = useState(false);
 
   useEffect(() => {
-      fetch('http://localhost:5000/loginUser', {
+      fetch('https://infinite-woodland-54699.herokuapp.com/loginUser', {
           method: 'POST',
           headers: { 'content-type': 'application/json' },
           body: JSON.stringify({ email: loggedInUser.email })

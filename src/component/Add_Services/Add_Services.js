@@ -20,7 +20,7 @@ const Add_Services = () => {
             facilities3: data.facilities3,
             imageURL: imageURLS
         };
-        const url = `http://localhost:5000/addServices`;
+        const url = `https://infinite-woodland-54699.herokuapp.com/addServices`;
 
         console.log(productData)
         fetch(url, {

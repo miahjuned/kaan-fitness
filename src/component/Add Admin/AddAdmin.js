@@ -15,7 +15,7 @@ const Add_Services = () => {
             email: data.email,
             imageURL: imageURLS
         };
-        const url = `http://localhost:5000/addAdmin`;
+        const url = `https://infinite-woodland-54699.herokuapp.com/addAdmin`;
 
         fetch(url, {
             method: 'POST',

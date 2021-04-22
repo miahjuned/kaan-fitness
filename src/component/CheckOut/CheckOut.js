@@ -13,7 +13,7 @@ const Add_Services = () => {
     const [Services, setServices] = useState({});
     
     useEffect(() => {
-        fetch('http://localhost:5000/checkout/' + _id)
+        fetch('https://infinite-woodland-54699.herokuapp.com/checkout/' + _id)
         .then(res => res.json())
         .then(data => setServices(data));
     }, [_id])
@@ -31,7 +31,7 @@ const Add_Services = () => {
             services: Services.name,
             number: data.number
         };
-        const url = `http://localhost:5000/order`;
+        const url = `https://infinite-woodland-54699.herokuapp.com/order`;
 
         fetch(url, {
             method: 'POST',

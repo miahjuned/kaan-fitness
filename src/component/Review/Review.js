@@ -8,7 +8,7 @@ const Review = () => {
     const [review, setReview] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/allReview')
+        fetch('https://infinite-woodland-54699.herokuapp.com/allReview')
         .then(res => res.json())
         .then(data => setReview(data))
     }, [])
@@ -19,6 +19,13 @@ const Review = () => {
             <article>TESTIMONIAL</article>
             <h2>What my clients are saying:</h2>
             <Row>
+
+                {
+                    review.length === 0 && <div className="spinner-border text-info spiner" role="status">
+                    <span className="sr-only">Loading...</span>
+                </div>
+                }
+
                 {
                     review.map(review => <Col className="carousel_section" key={review._id} review={review}>
                           <Card className="card" md={12} lg={3} sm={12} xl={3} xs={12}>

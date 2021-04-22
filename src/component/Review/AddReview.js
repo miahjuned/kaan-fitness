@@ -17,7 +17,7 @@ const Add_Services = () => {
             description: data.description,
             imageURL: imageURLS
         };
-        const url = `http://localhost:5000/addReview`;
+        const url = `https://infinite-woodland-54699.herokuapp.com/addReview`;
 
         console.log(productData)
         fetch(url, {
