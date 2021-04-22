@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Button, Card, CardImg, Col, Container, ListGroup, ListGroupItem, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import cardImg from '../../images/Isolated-background.jpg'
 import './Services.css';
 const Services = () => {
     const [product, setProduct] = useState([]);
@@ -52,7 +51,7 @@ const Services = () => {
                                 </ListGroup>
                                 
                                 <Card.Body>
-                                    <Link className="CardButton" to={`/checkout/${product._id}`}><Button>BECOME A MEMBER</Button></Link>
+                                    <Link className="CardButton" to={`service/checkout/${product._id}`}><Button>BECOME A MEMBER</Button></Link>
                                 </Card.Body>
                             </Card>
                         </Col>)

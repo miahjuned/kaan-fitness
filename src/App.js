@@ -21,6 +21,9 @@ import Login from './component/Login/Login';
 import PrivateRoute from './component/PrivateRoute/PrivateRoute';
 import CheckOut from './component/CheckOut/CheckOut';
 import OrderList from './component/OrderList/OrderList';
+import BlogPost from './component/Blog/BlogPost';
+import Add_BlogPost from './component/Blog/AddBlogPost';
+import AboutMe from './component/AboutMe/AboutMe';
 
 
 export const UserContext = createContext();
@@ -42,6 +45,7 @@ function App() {
             <Header></Header>
             <Featured></Featured>
             <Services></Services>
+            <AboutMe></AboutMe>
             <Review></Review>
             <GetInTouch></GetInTouch>
             <Blog></Blog>
@@ -61,6 +65,12 @@ function App() {
           </PrivateRoute>
 
 
+          <PrivateRoute path="/Blog/addPost">
+            <Admin_Deshboard></Admin_Deshboard>
+            <Add_BlogPost></Add_BlogPost>
+          </PrivateRoute>
+
+
           <PrivateRoute path="/orderList">
             <Admin_Deshboard></Admin_Deshboard>
             <OrderList></OrderList>
@@ -76,13 +86,17 @@ function App() {
           </PrivateRoute>
 
 
-          <PrivateRoute path="/checkout/:_id">
+          <PrivateRoute path="service/checkout/:_id">
             <CheckOut></CheckOut>
           </PrivateRoute>
 
 
           <Route path="/login">
             <Login></Login>
+          </Route>
+
+          <Route path="/Blog/Post">
+            <BlogPost></BlogPost>
           </Route>
 
 

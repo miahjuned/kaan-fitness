@@ -12,36 +12,36 @@ const Blog = () => {
             <hr/>
             <article className="blogTitle">WANT TO LEARN MORE?</article>
             <p>Check out these articles below</p>
-        <Row>
-            <Col md={3} lg={3} sm={6} xl={3} xs={12}>
-                <div className="blog_Column">
-                    <img src={blogImg1} alt=""/>
-                    <article>Kaanfitness Origins – The Kaanfitness Journey</article>
-                    <Button>Read More</Button>
-                </div>
-            </Col>
-            <Col md={3} lg={3} sm={6} xl={3} xs={12}>
-                <div className="blog_Column">
-                    <img src={blogImg2} alt=""/>
-                    <article>Kaanfitness Origins – The Kaanfitness Journey</article>
-                    <Button>Read More</Button>
-                </div>
-            </Col>
-            <Col md={3} lg={3} sm={6} xl={3} xs={12}>
-                <div className="blog_Column">
-                    <img src={blogImg3} alt=""/>
-                    <article>Kaanfitness Origins – The Kaanfitness Journey</article>
-                    <Button>Read More</Button>
-                </div>
-            </Col>
-            <Col md={3} lg={3} sm={6} xl={3} xs={12}>
-                <div className="blog_Column">
-                    <img src={blogImg4} alt=""/>
-                    <article>Kaanfitness Origins – The Kaanfitness Journey</article>
-                    <Button>Read More</Button>
-                </div>
-            </Col>
-        </Row>
+            <Row>
+                <Col className="blog_Column" md={3} lg={3} sm={6} xl={3} xs={12}>
+                    <div className="blog_Info">
+                        <img src={blogImg1} alt=""/>
+                        <article>Kaanfitness Origins – The Kaanfitness Journey</article>
+                        <Button>Read More</Button>
+                    </div>
+                </Col>
+                <Col className="blog_Column" md={3} lg={3} sm={6} xl={3} xs={12}>
+                    <div className="blog_Info">
+                        <img src={blogImg2} alt=""/>
+                        <article>Kaanfitness Origins – The Kaanfitness Journey</article>
+                        <Button>Read More</Button>
+                    </div>
+                </Col>
+                <Col className="blog_Column" md={3} lg={3} sm={6} xl={3} xs={12}>
+                    <div className="blog_Info">
+                        <img src={blogImg3} alt=""/>
+                        <article>Kaanfitness Origins – The Kaanfitness Journey</article>
+                        <Button>Read More</Button>
+                    </div>
+                </Col>
+                <Col className="blog_Column" md={3} lg={3} sm={6} xl={3} xs={12}>
+                    <div className="blog_Info">
+                        <img src={blogImg4} alt=""/>
+                        <article>Kaanfitness Origins – The Kaanfitness Journey</article>
+                        <Button>Read More</Button>
+                    </div>
+                </Col>
+            </Row>
         </div>
     );
 };

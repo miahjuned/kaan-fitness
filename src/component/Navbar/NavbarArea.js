@@ -23,7 +23,7 @@ const NavbarArea = () => {
             <Link className="pr-5 navbarItem" to="/home">Home</Link>
             <Link className="pr-5 navbarItem" to="/admin">Deshboard</Link>
             <Link className="pr-5 navbarItem" to="/about">About</Link>
-            <Link className="pr-5 navbarItem" to="/blog">Blog</Link>
+            <Link className="pr-5 navbarItem" to="/Blog/Post">Blog</Link>
             <Link className="pr-5 navbarItem" to="/login">Contact us</Link>
         </Nav>
         <Nav className="ml-auto">

@@ -12,8 +12,8 @@ const Footer = () => {
     <div className="footer">
       <Container>
                 <Row>
-                    <Col md={3} lg={4} sm={2} xl={4} xs={2}></Col>
-                    <Col md={6} lg={4} sm={8} xl={4} xs={8}>
+                    <Col md={3} lg={4} sm={2} xl={4} xs={12}></Col>
+                    <Col md={6} lg={4} sm={8} xl={4} xs={12}>
                         <img src={logo} alt="FooterImage"/>
                         <hr/>
                         <Row>
@@ -48,7 +48,7 @@ const Footer = () => {
                             </Col>
                         </Row>
                     </Col>
-                    <Col md={3} lg={4} sm={2} xl={4} xs={2}></Col>
+                    <Col md={3} lg={4} sm={2} xl={4} xs={12}></Col>
                 </Row>
             </Container>
     </div>

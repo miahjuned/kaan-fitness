@@ -41,6 +41,8 @@
 .services_section .card{
     background-color: lightgray;
     border-radius: 2%;
+    box-shadow: rgba(0, 0, 0, 0.14) 0px 4px 20px 0px, rgba(233, 30, 99, 0.4) 0px 7px 10px -5px
+    ;
 }
 .services_section .card:hover{
     color:  rgb(5, 5, 65);
@@ -61,4 +63,6 @@
     font-size: 30px;
     margin-top: 30%;
     margin-left: 50%;
+    padding: 10px;
+    font-style: italic;
 }

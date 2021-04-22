@@ -14,7 +14,6 @@
 .footerItem:hover, .footerAbout:hover{
     text-decoration: none;
     color:red;
-    border-bottom: 1px solid red;
 }
 .footer img{
     height: 35px;

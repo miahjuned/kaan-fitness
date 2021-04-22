@@ -1,9 +1,14 @@
 .get_InTouch{
     /* height: 400px; */
     background-color: black;
+
 }
+
 .get_InTouch img{
     width: 250px;
+    background-color: black;
+    padding-top: 25px;
+    margin-left: 25%;
 }
 .get_InTouch h2{
     color: white;
@@ -11,4 +16,7 @@
     font-family: "Roboto Slab";
     font-weight: 700;
     margin-top: 25px;
+}
+.get_InTouch .CardButton Button:hover{
+    color: white !important;
 }

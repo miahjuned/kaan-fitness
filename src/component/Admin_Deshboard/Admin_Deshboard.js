@@ -28,7 +28,7 @@ const Admin_Deshboard = () => {
 
                 
                 <Navbar bg="dark" variant="dark">
-                <Navbar.Brand href="#home">
+                <Navbar.Brand>
                     <Link className="pr-5 footerItem" to="/AddServices">
                       Add Services
                     </Link>
@@ -38,7 +38,7 @@ const Admin_Deshboard = () => {
 
                 
                 <Navbar bg="dark" variant="dark">
-                <Navbar.Brand href="#home">
+                <Navbar.Brand>
                     <Link className="pr-5 footerItem" to="/AddAdmin">
                       Add Admin
                     </Link>
@@ -46,7 +46,7 @@ const Admin_Deshboard = () => {
                 </Navbar>
                 <hr/>
                     <Navbar bg="dark" variant="dark">
-                    <Navbar.Brand href="#home">
+                    <Navbar.Brand >
                         <Link className="pr-5 footerItem" to="/orderList">
                           Order List
                         </Link>
@@ -56,9 +56,18 @@ const Admin_Deshboard = () => {
 
 
                     <Navbar bg="dark" variant="dark">
-                    <Navbar.Brand href="#home">
+                    <Navbar.Brand>
                         <Link className="pr-5 footerItem" to="/Addreview">
                           Services Review
+                        </Link>
+                    </Navbar.Brand>
+                    </Navbar>
+                    <hr/>
+
+                    <Navbar bg="dark" variant="dark">
+                    <Navbar.Brand>
+                        <Link className="pr-5 footerItem" to="/Blog/addPost">
+                          Add Blog Post
                         </Link>
                     </Navbar.Brand>
                     </Navbar>
