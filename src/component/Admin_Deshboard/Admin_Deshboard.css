@@ -2,7 +2,7 @@
     background-color: lightgray;
 }
 .Admin_Deshboard_Area{
-    height: 400px;
+    /* height: 400px; */
     background-color: gray;
 }
 .Admin_Deshboard_Area .leftSide{
@@ -16,5 +16,6 @@
 }
 .Admin_Deshboard_Area .rightSide{
     background-color: wheat;
+    padding-bottom: 35px;
     /* height: 400px; */
 }

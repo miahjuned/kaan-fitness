@@ -1,13 +1,64 @@
-import React from 'react';
-import { Carousel, Container } from 'react-bootstrap';
+import React, { useEffect, useState } from 'react';
+import { Card, CardImg, Carousel, Col, Container, ListGroup, ListGroupItem, Row } from 'react-bootstrap';
 import './Review.css';
 import ReviewImg from '../../images/Kaan-FitnessFinal-With-Tagline-White.jpg';
+import { Link } from 'react-router-dom';
 const Review = () => {
+
+    const [review, setReview] = useState([]);
+
+    useEffect(() => {
+        fetch('http://localhost:5000/allReview')
+        .then(res => res.json())
+        .then(data => setReview(data))
+    }, [])
+
     return (
-        <Container className="carousel_Area">
+        <div className="carousel_Area">
+        <Container className="">
             <article>TESTIMONIAL</article>
             <h2>What my clients are saying:</h2>
-            <Carousel className="carousel_section">
+            <Row>
+                {
+                    review.map(review => <Col className="carousel_section" key={review._id} review={review}>
+                          <Card className="card" md={12} lg={3} sm={12} xl={3} xs={12}>
+                            <CardImg style={{height: '200px'}} variant="top" src={review.imageURL}>
+                            </CardImg>
+                            <Card.Body>
+                                <Card.Title><h3>{review.name}</h3></Card.Title>
+                                <Card.Text>
+                                    <p>{review.title}</p>
+                                </Card.Text>
+                                <Card.Text>
+                                    <h2>“{review.description}”</h2>
+                                    
+                                </Card.Text>
+                            </Card.Body>
+                        </Card>
+                        {/* <Carousel>
+                            <Carousel.Item interval={1000}>
+                                <img 
+                                className=""
+                                src={review.imageURL} 
+                                alt="First Review"
+                                />
+                                <hr/>
+                                <Carousel.Caption>
+                                    <img 
+                                    className="headerimg"
+                                    src={review.imageURL} 
+                                    alt="First Review"
+                                    />
+                                    <h3>{review.className}</h3>
+                                    <p>{review.title}</p>
+                                    <p>{review.description}</p>
+                                </Carousel.Caption>
+                            </Carousel.Item>
+                        </Carousel> */}
+                    </Col>)
+                }
+            </Row>
+            {/* <Carousel className="carousel_section">
                 <Carousel.Item interval={1000}>
                     <img 
                     className=""
@@ -51,8 +102,9 @@ const Review = () => {
                         <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
-            </Carousel>
+            </Carousel> */}
         </Container>
+        </div>
     );
 };
 

@@ -1,25 +1,22 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import './AddReview.css';
 import { useForm } from 'react-hook-form';
 import { Col, Container, Row } from 'react-bootstrap';
 
 const Add_Services = () => {
     
-    const { register, handleSubmit, watch, formState: { errors } } = useForm();
+    const { register, handleSubmit, formState: { errors } } = useForm();
 
     const [imageURLS , setImageURL] = useState(null);
 
     const onSubmit = data => {
         const productData = {
             name: data.name,
-            title: data.title,
-            description: data.description,
+            email: data.email,
             imageURL: imageURLS
         };
-        const url = `http://localhost:5000/addReview`;
+        const url = `http://localhost:5000/addAdmin`;
 
-        console.log(productData)
         fetch(url, {
             method: 'POST',
             headers: {
@@ -58,20 +55,16 @@ const Add_Services = () => {
                 <Col className="rightSide" md={9} lg={9} sm={9} xl={9} xs={9}>
                     <form onSubmit={handleSubmit(onSubmit)}>
 
-                        <label >Your Name : </label>
-                        <input name="name" placeholder="Write Your Name" ref={register} />
+                        <label >Admin Name : </label>
+                        <input name="name" placeholder="Write Admin Name" ref={register} />
                         <hr/>
 
-                        <label >upload your Image: </label>
+                        <label >Admin your Image: </label>
                         <input type="file" name="exampleRequired" onChange={handleImageUpload}/>
-                        <hr/>
-
-                        <label >Your company name: </label>
-                        <input name="title" placeholder="Write your company name" ref={register} />
 
                         <hr/>
-                        <label >Description : </label>
-                        <input name="description" placeholder="write your feedback description" ref={register} />
+                        <label >Admin Email : </label>
+                        <input name="email" placeholder="write Admin Email" ref={register} />
 
                         <hr/>
 
